@@ -7,21 +7,21 @@
     <title>Weather App V2</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/main.css">
-    <script src="/js/script.js"></script>
+    <script src="/js/script.js" defer></script>
 </head>
 <body>
     <div class="card">
         <div class="search">
-            <input type="text" class="search__bar">
-            <button><i class="bi bi-search"></i></button>
+            <input type="text" class="search__bar search--input" placeholder="SEARCH">
+            <button class="search__button"><i class="bi bi-search"></i></button>
         </div>
-        <div class="weather">
-            <h1 class="temp">51&deg</h1>
+        <div class="weather loading">
+            <h1 class="weather__temp"><span>&deg</span></h1>
             <h2 class="weather__city">
                 Weather in Manila
             </h2>
             <img src="" alt="weather icon" class="weather__icon">
-            <div class="weather__Description">Rainy</div>
+            <div class="weather__description">Rainy</div>
             <div class="weather__humidity">Humidity: 90%</div>
             <div class="weather__wind">Wind speed: 6.7 km/h</div>
         </div>
